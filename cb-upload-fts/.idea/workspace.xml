@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e806d1da-0cdf-49a6-8eef-2abce375eff8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1W1659Z64C1ppm8MTcGO0DfMONG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="LombokPluginEnabledInProject" value="true" />
+    <property name="LombokPluginIS_ANNOTATION_PROCESSING_CHECK_Enabled" value="true" />
+    <property name="LombokPluginIS_BUILDER_Enabled" value="true" />
+    <property name="LombokPluginIS_CONSTRUCTOR_Enabled" value="true" />
+    <property name="LombokPluginIS_DELEGATE_Enabled" value="true" />
+    <property name="LombokPluginIS_LOG_Enabled" value="true" />
+    <property name="LombokPluginIS_LOMBOK_VERSION_CHECK_Enabled" value="true" />
+    <property name="LombokPluginIS_MISSING_LOMBOK_CHECK_Enabled" value="true" />
+    <property name="LombokPluginIS_VAL_Enabled" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/couchbase/demo/storage" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.couchbase.demo.upload" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/couchbase/demo/storage" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/couchbase/demo/document" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="CBUploadApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cb-upload-fts" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.couchbase.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.couchbase.demo.CBUploadApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.CBUploadApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e806d1da-0cdf-49a6-8eef-2abce375eff8" name="Default Changelist" comment="" />
+      <created>1578304567466</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578304567466</updated>
+      <workItem from="1578304572326" duration="15436000" />
+      <workItem from="1578411499750" duration="422000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578308458672">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1578308458672" />
+    <state x="501" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578308530999">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="501" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1578308530999" />
+    <state width="1638" height="272" key="GridCell.Tab.0.bottom" timestamp="1578392736731">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="272" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1578392736731" />
+    <state width="1638" height="272" key="GridCell.Tab.0.center" timestamp="1578392736730">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="272" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1578392736730" />
+    <state width="1638" height="272" key="GridCell.Tab.0.left" timestamp="1578392736730">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="272" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1578392736730" />
+    <state width="1638" height="272" key="GridCell.Tab.0.right" timestamp="1578392736731">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="272" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1578392736731" />
+    <state width="1638" height="272" key="GridCell.Tab.1.bottom" timestamp="1578392736732">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="272" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1578392736732" />
+    <state width="1638" height="272" key="GridCell.Tab.1.center" timestamp="1578392736732">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="272" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1578392736732" />
+    <state width="1638" height="272" key="GridCell.Tab.1.left" timestamp="1578392736731">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="272" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1578392736731" />
+    <state width="1638" height="272" key="GridCell.Tab.1.right" timestamp="1578392736732">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="272" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1578392736732" />
+    <state x="519" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1578411580456">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="519" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1578411580456" />
+  </component>
+</project>
