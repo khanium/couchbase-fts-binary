@@ -9,4 +9,6 @@ import org.apache.tika.metadata.Metadata;
 public class FileDocument {
     private Metadata metadata;
     private String content;
+    private String filename;
+    private String docType;
 }

@@ -1,5 +1,9 @@
 package com.couchbase.demo.upload;
 
+import com.couchbase.client.java.Bucket;
+import com.couchbase.client.java.search.SearchQuery;
+import com.couchbase.client.java.search.queries.QueryStringQuery;
+import com.couchbase.client.java.search.result.SearchQueryResult;
 import com.couchbase.demo.storage.StorageFileNotFoundException;
 import com.couchbase.demo.storage.StorageService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,6 +62,11 @@ public class FileUploadController {
 	@ExceptionHandler(StorageFileNotFoundException.class)
 	public ResponseEntity<?> handleStorageFileNotFound(StorageFileNotFoundException exc) {
 		return ResponseEntity.notFound().build();
+	}
+
+	@PostMapping("search")
+	public ResponseEntity<SearchQueryResult> binarySearch(@RequestBody String content) {
+		return ResponseEntity.ok(storageService.binarySearch(content));
 	}
 
 }

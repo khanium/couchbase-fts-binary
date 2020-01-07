@@ -7,9 +7,13 @@ import com.couchbase.client.java.document.BinaryDocument;
 import com.couchbase.client.java.document.JsonDocument;
 import com.couchbase.client.java.document.json.JsonArray;
 import com.couchbase.client.java.document.json.JsonObject;
+import com.couchbase.client.java.search.SearchQuery;
+import com.couchbase.client.java.search.queries.QueryStringQuery;
+import com.couchbase.client.java.search.result.SearchQueryResult;
 import com.couchbase.demo.document.DocumentAnalyzer;
 import com.couchbase.demo.document.FileDocument;
 import org.apache.tika.metadata.Metadata;
+import org.apache.tika.metadata.TikaCoreProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,26 +25,28 @@ import org.springframework.util.StreamUtils;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
-import java.time.LocalDate;
 import java.util.Date;
 import java.util.stream.Stream;
 
 @Service
-public class FileSystemStorageService implements StorageService {
-	private final Logger LOGGER = LoggerFactory.getLogger(FileSystemStorageService.class);
+public class CouchbaseFtsStorageService implements StorageService {
+	private final Logger LOGGER = LoggerFactory.getLogger(CouchbaseFtsStorageService.class);
 
 	private final Path rootLocation;
 	private final DocumentAnalyzer analyzer;
 	private final Bucket bucket;
 
 	@Autowired
-	public FileSystemStorageService(StorageProperties properties, DocumentAnalyzer analyzer, Bucket bucket) {
+	public CouchbaseFtsStorageService(StorageProperties properties, DocumentAnalyzer analyzer, Bucket bucket) {
 		this.rootLocation = Paths.get(properties.getLocation());
 		this.analyzer = analyzer;
 		this.bucket = bucket;
@@ -81,10 +87,20 @@ public class FileSystemStorageService implements StorageService {
 
 	private void storeInCouchbase(String filename, InputStream inputStream, ByteBuf byteBuf) throws IOException{
 		FileDocument doc = analyzer.analyze(inputStream);
+		doc.setFilename(filename);
+		doc.setDocType(extractDocType(doc.getMetadata()));
 		print(doc); // TODO save in Couchbase
 		String id = extractId(filename);
 		bucket.upsert(JsonDocument.create(id, toJsonObject(doc)));
+		//TODO Optional store in Couchbase
 		bucket.upsert(BinaryDocument.create(id+"_attachment", byteBuf));
+	}
+
+	public SearchQueryResult binarySearch(String content) {
+		String indexName = "binarySearch";
+		QueryStringQuery query = SearchQuery.queryString(content);
+
+		return bucket.query(new SearchQuery(indexName, query).limit(10).highlight());
 	}
 
 	private JsonObject toJsonObject(FileDocument doc) {
@@ -97,6 +113,8 @@ public class FileSystemStorageService implements StorageService {
 		content.put("body", doc.getContent());
 		content.put("type","searchable");
 		content.put("registeredAt", new Date());
+		content.put("reference", doc.getFilename());
+		content.put("docType", doc.getDocType());
 		return content;
 	}
 
@@ -106,6 +124,11 @@ public class FileSystemStorageService implements StorageService {
 				.replace("/","_")
 				.replace("\\","_")
 				.replace(".","-").toLowerCase();
+	}
+
+	private String extractDocType(Metadata metadata) {
+		return metadata.get(TikaCoreProperties.FORMAT).split(";")[0];
+
 	}
 
 	private void print(FileDocument doc) {
