@@ -1,17 +1,17 @@
-# Couchbase Fulltext Search with binary files
+# Couchbase Full Text Search with binary files
 Demo project for uploading binary documents into Couchbase and indexing their metadata &amp; content
 
 ![Logos](assets/images/logos.png)
 
 ## Scope
-Enabling Couchbase Fulltext search services on binary documents (pdfs, docx, excells, plain text, ...etc). 
+Enabling Couchbase Full Text Search services on binary documents (pdfs, docx, excells, plain text, ...etc). 
 
 ![Architecture Overview](assets/images/overview.png)
 
 ## Content
 
 * [Apache Tika](#tika)
-* [Couchbase Fulltext Search](#couchbase)
+* [Couchbase Full Text Search](#couchbase)
 * [Getting Started](#gettingstarted)
 
 
@@ -232,7 +232,7 @@ And check the results:
 ![fts-index-results](assets/images/fts-index-results.png)
 
 
-### Fulltext Search Java SDK library
+### Full Text Search Java SDK library
 Couchbase offers Full-text search support, allowing you to search for documents that contain certain words or phrases. In the Java SDK you can search full-text indexes by using the **Bucket.query(SearchQuery)** API.
 
 Querying a FTS index through the Java client is performed through the **Bucket.query(SearchQuery q)** method, providing a SearchQuery. Building a SearchQuery takes two parameters, the index name to query and the actual search query itself (kind of a statement). 
