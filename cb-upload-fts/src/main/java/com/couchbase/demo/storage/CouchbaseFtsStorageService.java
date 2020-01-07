@@ -34,8 +34,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.stream.Stream;
+
+import static java.time.LocalDateTime.now;
 
 @Service
 public class CouchbaseFtsStorageService implements StorageService {
@@ -111,7 +114,7 @@ public class CouchbaseFtsStorageService implements StorageService {
 		}
 		content.put("body", doc.getContent());
 		content.put("type","searchable");
-		content.put("registeredAt", new Date());
+		content.put("registeredAt", now().format(DateTimeFormatter.ISO_DATE_TIME));
 		content.put("reference", doc.getFilename());
 		content.put("docType", doc.getDocType());
 		return content;
