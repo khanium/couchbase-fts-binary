@@ -10,8 +10,8 @@ import com.couchbase.client.java.document.json.JsonObject;
 import com.couchbase.client.java.search.SearchQuery;
 import com.couchbase.client.java.search.queries.QueryStringQuery;
 import com.couchbase.client.java.search.result.SearchQueryResult;
-import com.couchbase.demo.document.DocumentAnalyzer;
-import com.couchbase.demo.document.FileDocument;
+import com.couchbase.demo.analysis.DocumentAnalyzer;
+import com.couchbase.demo.analysis.FileDocument;
 import org.apache.tika.metadata.Metadata;
 import org.apache.tika.metadata.TikaCoreProperties;
 import org.slf4j.Logger;
@@ -89,11 +89,10 @@ public class CouchbaseFtsStorageService implements StorageService {
 		FileDocument doc = analyzer.analyze(inputStream);
 		doc.setFilename(filename);
 		doc.setDocType(extractDocType(doc.getMetadata()));
-		print(doc); // TODO save in Couchbase
 		String id = extractId(filename);
 		bucket.upsert(JsonDocument.create(id, toJsonObject(doc)));
-		//TODO Optional store in Couchbase
-		bucket.upsert(BinaryDocument.create(id+"_attachment", byteBuf));
+		// Optional uncommented the following line for storing binary files in Couchbase
+		// bucket.upsert(BinaryDocument.create(id+"_attachment", byteBuf));
 	}
 
 	public SearchQueryResult binarySearch(String content) {

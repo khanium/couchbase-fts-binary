@@ -1,4 +1,4 @@
-package com.couchbase.demo.document;
+package com.couchbase.demo.analysis;
 
 import org.apache.tika.Tika;
 import org.apache.tika.exception.TikaException;

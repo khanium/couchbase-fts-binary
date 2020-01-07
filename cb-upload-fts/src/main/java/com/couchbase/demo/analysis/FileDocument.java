@@ -1,4 +1,4 @@
-package com.couchbase.demo.document;
+package com.couchbase.demo.analysis;
 
 import lombok.Builder;
 import lombok.Data;
