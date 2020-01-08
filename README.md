@@ -310,7 +310,7 @@ $ mvn spring-boot:run
 
 ### 5. Upload your binary file (pdf, docs, txt, ..etc)
 
-Open your browser and upload pdfs files in the application service: [http://localhost:8080](http://localhost:8080)
+Open your browser and upload pdfs files using the application UI: [http://localhost:8080](http://localhost:8080)
 
 ![localhost:8080](assets/images/upload-file.png)
 
