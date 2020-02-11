@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e806d1da-0cdf-49a6-8eef-2abce375eff8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/analysis/MetadataConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/analysis/DocumentAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/analysis/DocumentAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/SearchableBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/SearchableBinary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +142,7 @@
       <workItem from="1580939758987" duration="3739000" />
       <workItem from="1581269824871" duration="2595000" />
       <workItem from="1581333587798" duration="6686000" />
-      <workItem from="1581406263466" duration="2153000" />
+      <workItem from="1581406263466" duration="4524000" />
     </task>
     <servers />
   </component>

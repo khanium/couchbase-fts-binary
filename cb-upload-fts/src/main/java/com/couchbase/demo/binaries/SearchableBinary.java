@@ -4,15 +4,15 @@ import com.couchbase.client.java.repository.annotation.Field;
 import com.couchbase.client.java.repository.annotation.Id;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 import org.springframework.data.couchbase.core.mapping.Document;
 
 import java.util.*;
 
 @Document
 @Data
+@Builder
+@AllArgsConstructor
 @NoArgsConstructor
 public class SearchableBinary {
     public static final String PREFIX_TYPE="searchable";
