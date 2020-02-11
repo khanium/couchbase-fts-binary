@@ -57,6 +57,8 @@ This section illustrates Apache Tika features using working examples.The illustr
 @Component
 public class DocumentAnalyzer {
     private final Logger LOGGER = LoggerFactory.getLogger(DocumentAnalyzer.class);
+
+    private MetadataConverter converter = new MetadataConverter();
     private final Tika analyzer;
 
     @Autowired
@@ -64,37 +66,67 @@ public class DocumentAnalyzer {
         this.analyzer = analyzer;
     }
 
-    public FileDocument analyze(InputStream stream) {
-        return analyze(new Metadata(), stream);
+    public SearchableBinary analyze(FileUpload fileUpload) {
+        return analyze(new Metadata(), fileUpload);
     }
 
-    public FileDocument analyze(Metadata metadata, InputStream stream) {
-        FileDocument doc = null;
+    public SearchableBinary analyze(Metadata metadata, FileUpload fileUpload) {
+        SearchableBinary doc;
         try {
-            String content = analyzer.parseToString(stream, metadata);
-            doc = FileDocument.builder().metadata(metadata).content(content).build();
+            String content = analyzer.parseToString(fileUpload.getSearchContentStream(), metadata);
+
+            doc = SearchableBinary.builder()
+                    .id(SearchableBinary.PREFIX_TYPE.concat(":").concat(fileUpload.getId()))
+                    .docType(extractDocType(metadata))
+                    .metadata(converter.from(metadata))
+                    .body(content)
+                    .thumbnail("pdf.jpg") // TODO extract thumbnail from first page
+                    .registeredAt(new Date())
+                    .reference(fileUpload.getFilename())
+                    .build();
+
+            return doc;
         } catch (TikaException | IOException ex) {
             LOGGER.error("{} analyzing input stream",ex.getClass().getSimpleName(), ex);
             //TODO handle exception
             throw new RuntimeException(ex);
         }
-        return doc;
+    }
+
+    private String extractDocType(Metadata metadata) {
+        String format = metadata.get(TikaCoreProperties.FORMAT);
+        return Objects.isNull(format) ? "unknown" : metadata.get(TikaCoreProperties.FORMAT).split(";")[0];
+
     }
 
 }
 ```
 
-*Class* **FileDocument**:
+*Class* **SearchableBinary**:
 
 ```
 @Data
-@Builder
-public class FileDocument {
-    private Metadata metadata;
-    private String content;
-    private String filename;
+public class SearchableBinary {
+    public static final String PREFIX_TYPE="searchable";
+
+    @Id
+    private String id;
+    private String body;
+    private String reference;
     private String docType;
-}
+    private Date registeredAt;
+    private String thumbnail;
+    private Metadata metadata;
+
+    @Data
+    static class Metadata {
+        private String createdAt;
+        private String lastUpdatedBy;
+        private String lastUpdatedAt;
+        private String author;
+        private final List<String> keywords = new ArrayList<>();
+        private final Map<String, String> others = new HashMap<>();
+    }
 ```
 
 *Spring Configuration* **AnalyzerConfig** *Class*:
@@ -238,12 +270,17 @@ Couchbase offers Full-text search support, allowing you to search for documents 
 Querying a FTS index through the Java client is performed through the **Bucket.query(SearchQuery q)** method, providing a SearchQuery. Building a SearchQuery takes two parameters, the index name to query and the actual search query itself (kind of a statement). 
 
 ```
-	public SearchQueryResult binarySearch(String content) {
-		String indexName = "binarySearch";
-		QueryStringQuery query = SearchQuery.queryString(content);
+   public static final String []SEARCHING_FIELDS = {"registeredAt","reference","metadata", "metadata.author","metadata.createdAt","metadata.keywords","thumbnail"};
 
-		return bucket.query(new SearchQuery(indexName, query).limit(10).highlight());
-	}
+    public SearchResult binarySearch(String content) {
+        String indexName = "binarySearch";
+        QueryStringQuery query = SearchQuery.queryString(content);
+
+        Bucket bucket = searchableBinaryRepository.getCouchbaseOperations().getCouchbaseBucket();
+        SearchQueryResult result = bucket.query(new SearchQuery(indexName, query).limit(10).highlight().fields(SEARCHING_FIELDS));
+
+        return SearchResult.from(result);
+    }
 ```
 
 This method returns a **SearchQueryResult** whose iterator yields the results of the query (in the form of **SearchQueryRow** objects). 
