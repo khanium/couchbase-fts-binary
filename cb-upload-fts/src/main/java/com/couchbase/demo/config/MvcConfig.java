@@ -16,6 +16,7 @@ public class MvcConfig implements WebMvcConfigurer {
         registry.addViewController("/").setViewName("uploadForm");
         registry.addViewController("/search").setViewName("search");
         registry.addViewController("/upload").setViewName("uploadForm");
+        registry.addViewController("/details").setViewName("details");
     }
 
     @Override
@@ -23,8 +24,15 @@ public class MvcConfig implements WebMvcConfigurer {
         registry.addResourceHandler("/images/**")
                 .addResourceLocations("classpath:/static/images/");
 
-        registry.addResourceHandler("/bootstrap/**")
-                .addResourceLocations("classpath:/static/bootstrap/");
+        registry.addResourceHandler("/css/**")
+                .addResourceLocations("classpath:/static/css/");
+
+        registry.addResourceHandler("/js/**")
+                .addResourceLocations("classpath:/static/js/");
+
+        registry.addResourceHandler("/webfonts/**")
+                .addResourceLocations("classpath:/static/webfonts/");
+
     }
 
 

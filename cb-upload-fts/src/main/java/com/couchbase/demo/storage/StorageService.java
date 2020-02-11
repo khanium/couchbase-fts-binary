@@ -1,8 +1,7 @@
 package com.couchbase.demo.storage;
 
-import com.couchbase.client.java.search.result.SearchQueryResult;
+import com.couchbase.demo.upload.FileUpload;
 import org.springframework.core.io.Resource;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.nio.file.Path;
 import java.util.stream.Stream;
@@ -11,7 +10,7 @@ public interface StorageService {
 
 	void init();
 
-	void store(MultipartFile file);
+	void store(FileUpload file);
 
 	Stream<Path> loadAll();
 
@@ -21,6 +20,6 @@ public interface StorageService {
 
 	void deleteAll();
 
-	SearchQueryResult binarySearch(String content);
+	//SearchResult binarySearch(String content);
 
 }

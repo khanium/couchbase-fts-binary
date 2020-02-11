@@ -1,9 +1,6 @@
 package com.couchbase.demo.upload;
 
-import com.couchbase.client.java.Bucket;
-import com.couchbase.client.java.search.SearchQuery;
-import com.couchbase.client.java.search.queries.QueryStringQuery;
-import com.couchbase.client.java.search.result.SearchQueryResult;
+import com.couchbase.demo.binaries.BinaryService;
 import com.couchbase.demo.storage.StorageFileNotFoundException;
 import com.couchbase.demo.storage.StorageService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,12 +19,13 @@ import java.util.stream.Collectors;
 
 @Controller
 public class FileUploadController {
-
 	private final StorageService storageService;
+	private final BinaryService binaryService;
 
 	@Autowired
-	public FileUploadController(StorageService storageService) {
+	public FileUploadController(StorageService storageService, BinaryService binaryService) {
 		this.storageService = storageService;
+		this.binaryService = binaryService;
 	}
 
 	@GetMapping("/")
@@ -51,11 +49,16 @@ public class FileUploadController {
 
 	@PostMapping("/")
 	public String handleFileUpload(@RequestParam("file") MultipartFile file,
-			RedirectAttributes redirectAttributes) {
-		storageService.store(file);
-		redirectAttributes.addFlashAttribute("message",
-				"You successfully uploaded " + file.getOriginalFilename() + "!");
-
+								   RedirectAttributes redirectAttributes) throws IOException {
+			try (final FileUpload uploadFile = FileUpload.from(file)) {
+				binaryService.save(uploadFile);
+				storageService.store(uploadFile);
+				redirectAttributes.addFlashAttribute("message",
+						"You successfully uploaded " + uploadFile.getFilename() + "!");
+			}
+		// storageService.store(file);
+//		redirectAttributes.addFlashAttribute("message",
+//				"You successfully uploaded " + file.getOriginalFilename() + "!");
 		return "redirect:/";
 	}
 
@@ -64,9 +67,6 @@ public class FileUploadController {
 		return ResponseEntity.notFound().build();
 	}
 
-	@PostMapping("search")
-	public ResponseEntity<SearchQueryResult> binarySearch(@RequestBody String content) {
-		return ResponseEntity.ok(storageService.binarySearch(content));
-	}
+
 
 }

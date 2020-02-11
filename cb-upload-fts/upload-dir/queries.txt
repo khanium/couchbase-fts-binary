@@ -1,0 +1,1 @@
+{"statement":"select * from idp_web where _class='com.example.demo.model.GBUserMetadata' AND status!='terminated' AND status!='suspended' AND ANY v IN msisdn SATISFIES v='test' END limit 1"}

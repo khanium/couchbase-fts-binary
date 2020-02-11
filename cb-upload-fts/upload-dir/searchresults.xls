@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+<DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+<Author>NetSuite</Author>
+<LastAuthor>NetSuite</LastAuthor>
+<Company>NetSuite</Company>
+</DocumentProperties>
+<Styles>
+<Style ss:ID="company">
+<Alignment ss:Horizontal="Center"/>
+<Font ss:Bold="1"/>
+</Style> <Style ss:ID="error">
+<Alignment ss:Horizontal="Center"/>
+<Interior ss:Color="#d04040" ss:Pattern="Solid"/>
+<Font ss:Bold="1"/>
+</Style> <Style ss:ID="header">
+<Alignment ss:Horizontal="Center"/>
+<Font ss:Size="7" ss:Bold="1"/>
+<Interior ss:Color="#d0d0d0" ss:Pattern="Solid"/>
+</Style> <Style ss:ID="Default" ss:Name="Normal">
+<Alignment ss:Vertical="Bottom"/>
+<Borders/>
+<Font ss:FontName="Arial" ss:Size="8"/>
+<Interior/>
+<NumberFormat/>
+<Protection/>
+</Style>
+<Style ss:ID="s__TIMEOFDAY"><NumberFormat ss:Format="Medium Time"/></Style>
+<Style ss:ID="s__DATETIME"><NumberFormat ss:Format="General Date"/></Style>
+<Style ss:ID="s__DATETIMETZ"><NumberFormat ss:Format="General Date"/></Style>
+<Style ss:ID="s__DATE"><NumberFormat ss:Format="Short Date"/>
+</Style><Style ss:ID="s__text"></Style><Style ss:ID="s__currency"><NumberFormat ss:Format="Currency"/></Style>
+<Style ss:ID="s__percent"><NumberFormat ss:Format="Percent"/></Style>
+<Style ss:ID="s1_b_text"><Alignment ss:Indent="1"/><Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Color="#000000" ss:Bold="1"/></Style>
+<Style ss:ID="s_b_text"><Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Color="#000000" ss:Bold="1"/></Style>
+<Style ss:ID="s2__text"><Alignment ss:Indent="2"/></Style>
+<Style ss:ID="s_b_currency"><Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Color="#000000" ss:Bold="1"/><NumberFormat ss:Format="Currency"/></Style>
+<Style ss:ID="s_currency_nosymbol"><Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Color="#000000" /><NumberFormat ss:Format="#,##0.00_);[Red]\(#,##0.00\)"/></Style>
+<Style ss:ID="s1__text"><Alignment ss:Indent="1"/></Style>
+<Style ss:ID="s_b_currency_X"><Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Color="#000000" ss:Bold="1"/><Interior ss:Color="#f0e0e0" ss:Pattern="Solid"/><NumberFormat ss:Format="Currency"/></Style>
+<Style ss:ID="s__currency_he_IL"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;ILS&quot;#,##0.00_);(&quot;ILS&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_sv_SE"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;SKr&quot;#,##0.00_);(&quot;SKr&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_en_AE"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;AED&quot;#,##0.00_);(&quot;AED&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_no_NO"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;NKr&quot;#,##0.00_);(&quot;NKr&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_en_US"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;$&quot;#,##0.00_);(&quot;$&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_ar_SA"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;SRl&quot;#,##0.00_);(&quot;SRl&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_en_CA"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;Can$&quot;#,##0.00_);(&quot;Can$&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_fr_FR_EURO"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;€&quot;#,##0.00_);(&quot;€&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_da_DK"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;DKr&quot;#,##0.00_);(&quot;DKr&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_en_AU"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;$A&quot;#,##0.00_);(&quot;$A&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_en_IN"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;0#Rs.|1#Re.|1<Rs.&quot;#,##0.00_);(&quot;0#Rs.|1#Re.|1<Rs.&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_en_GB"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;£&quot;#,##0.00_);(&quot;£&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_zh_CN"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;Y&quot;#,##0.00_);(&quot;Y&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_ja_JP"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;¥&quot;#,##0.00_);(&quot;¥&quot;#,##0.00)"/></Style>
+</Styles>
+<Worksheet ss:Name="WeeklyEmailReportEMEAAPJResult">
+<Table><Row>
+<Cell ss:StyleID="header"><Data ss:Type="String">SED (Expiration)</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Sales Order</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Account</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Project Name</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Task Name</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Assignee SA</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Estimated Hours</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Actual Hours</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">% Completion</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Country</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Status</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2019-07-31T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3541</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Saipem SpA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3541_Saipem_TAM_12days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_Saipem_12days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1163 Raymundo Flores Medina</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">96</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">0</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.0</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Italy</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2019-07-31T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3541</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Saipem SpA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3541_Saipem_Consulting_10days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Saipem_10days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1163 Raymundo Flores Medina</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">80</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">14</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.175</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Italy</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2019-07-31T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3541</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Saipem SpA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3541_Saipem_Consulting_10days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Saipem_10days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1212 Jose Molina Gonzalez</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">80</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">14</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.175</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Italy</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2019-09-10T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3604</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Generali Deutschland Informatik Services GmbH</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3604_TAM_AACHEN</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_Generali_Aachen_5days_2019</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1181 Vaidas Gasiunas</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">40</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">18</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.45</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Germany</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2019-09-30T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3678</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Citigroup</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3678_Arch Review_UK Short</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ARShort_Citi_UK</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1081 Karthik Babu Sekar</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">22</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">0</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.0</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United States</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Pending</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2019-10-16T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3680</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Generali Deutschland Informatik Services GmbH</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3680_TAM_Hamburg_NEW</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_Generali_Hamburg_10days_2019</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1181 Vaidas Gasiunas</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">80</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">2</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.025</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Germany</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2019-10-28T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3707</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Crédit Agricole CIB</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US2707_TAM</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_CreditAgricole_10days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">10139 Fabrice Leray</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">80</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">12</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.15</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2019-10-28T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3727</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Emirates</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3727_TAM</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_Emirates_25days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1034 Mohammed Haji</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">200</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">96</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.48</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United Arab Emirates</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2019-10-28T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3727</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Emirates</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3727_TAM</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_Emirates_25days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1081 Karthik Babu Sekar</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">200</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">96</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.48</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United Arab Emirates</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2019-10-28T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3727</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Emirates</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3727_TAM</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_Emirates_25days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1212 Jose Molina Gonzalez</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">200</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">96</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.48</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United Arab Emirates</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2019-10-28T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3723</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Louis Vuitton Malletier</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3723_TAM</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_LVMH_6days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1212 Jose Molina Gonzalez</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">48</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">32</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.667</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2019-11-26T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3782</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">AlmavivA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3782_Consulting Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Almaviva_PosteItaliane_15days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1126 Ludovic Dufrenoy</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">120</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">50</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.41700000000000004</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Italy</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Pending</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2019-11-26T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3782</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">AlmavivA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3782_Consulting Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Almaviva_PosteItaliane_15days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1163 Raymundo Flores Medina</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">120</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">50</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.41700000000000004</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Italy</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Pending</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2019-11-26T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3782</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">AlmavivA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3782_Consulting Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Almaviva_PosteItaliane_15days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1212 Jose Molina Gonzalez</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">120</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">50</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.41700000000000004</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Italy</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Pending</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2019-12-20T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3852</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">El Corte Ingles</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3852_Consulting Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ECI_Consulting_12days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1163 Raymundo Flores Medina</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">96</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">33</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.344</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Spain</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2019-12-21T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3855</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">La Banque Postale</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3855_TAM Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_LBP_12days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">10139 Fabrice Leray</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">96</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">15</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.156</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-03T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3947</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">American Express AZ</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3947_Consulting Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Aligned Solution Architect (96 days)</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">10151 Tyler Denton</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">768</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">372</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.484</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United States</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-08T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3888</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Proximus PLC</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3888_TAM Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_Proximus_10days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1212 Jose Molina Gonzalez</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">80</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">26</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.325</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Belgium</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-09T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3889</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Amadeus S.A.S.</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3889_Amadeus_November19</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Workshop_Amadeus_November19</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1181 Vaidas Gasiunas</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">24</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">0</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.0</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-09T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3889</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Amadeus S.A.S.</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3889_Amadeus_September19</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Workshop_Amadeus_September19</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1181 Vaidas Gasiunas</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">24</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">0</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.0</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-13T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3911</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">U GIE IRIS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3911_Consulting Day</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_IRIS_12days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1126 Ludovic Dufrenoy</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">96</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">68</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.708</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-21T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3929</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Odigo</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3929_TAM Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_Prosodie2019_6days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1212 Jose Molina Gonzalez</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">48</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">8</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.16699999999999998</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-22T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3932</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">9th Bit</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3932_TAM Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">9thbit_TAM_5days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1081 Karthik Babu Sekar</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">40</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">6</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.15</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">South Africa</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-23T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3949</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Insight Technology Solutions SAS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3949_TAM Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_Carrefour_12days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">10139 Fabrice Leray</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">96</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">16</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.16699999999999998</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-23T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3949</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Insight Technology Solutions SAS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3949_TAM Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_Carrefour_12days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1212 Jose Molina Gonzalez</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">96</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">16</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.16699999999999998</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-27T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3961</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Coyote System</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3961_TAM days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_Coyote2019_12days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1181 Vaidas Gasiunas</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">96</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">24</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.25</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-27T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3960</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">FNAC DARTY</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3960_TAM Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_FNAC2019_15.5days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1181 Vaidas Gasiunas</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">124</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">54</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.435</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-28T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3962</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Toro Development SL</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3962_Consulting Day</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Toro_2days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1163 Raymundo Flores Medina</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">16</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">0</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.0</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Spain</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-29T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3974</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SCC France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3974_TAM Days - LaPoste</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_LaPoste_15days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">10139 Fabrice Leray</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">120</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">2</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.017</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-30T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4004</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SCC France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4004_TAM Days - DGGN</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_DGGN_4days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">10139 Fabrice Leray</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">32</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">8</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.25</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-30T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3994</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Softway Medical</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3994_TAM Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Softway_6days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">10139 Fabrice Leray</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">48</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">12</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.25</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-30T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3990</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Undertone</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3990_Consulting days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Perion_5days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1086 Roi Katz</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">40</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">16</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.4</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United States</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-30T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3990</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Undertone</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3990_Consulting days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Perion_5days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1126 Ludovic Dufrenoy</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">40</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">16</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.4</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United States</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-30T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3975</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Soletanche Freyssinet SAS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3975_Arch Review</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">AR_Long_Soletanche_3days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1212 Jose Molina Gonzalez</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">34</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">26</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.765</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-30T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3987</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">CGI France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3987_TAM Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_CGI_Decathlon_6days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1126 Ludovic Dufrenoy</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">48</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">46</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.958</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-01-30T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3987</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">CGI France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3987_TAM Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_CGI_Decathlon_6days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1212 Jose Molina Gonzalez</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">48</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">46</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.958</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-02-18T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4060</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Emirates</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4060_Consulting_Senior_Architect</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ConsultingSA_Emirates_15days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1034 Mohammed Haji</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">120</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">8</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.067</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United Arab Emirates</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-02-18T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4060</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Emirates</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4060_Consulting_Emirates_Spindox</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Spindox_80days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">10147 V-Roberto Bruni</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">640</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">240</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.375</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United Arab Emirates</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-03-10T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4078</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Checkout.com</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">I&apos;US4078_Quick Start</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Quickstart_Checkout</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1081 Karthik Babu Sekar</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">26</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">22</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.846</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United Kingdom</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-03-18T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4088</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Mobileum</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4088_Consulting Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Mobileum_2days_March2019</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1056 Clarence Tauro</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">16</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">0</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.0</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United States</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Pending</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-03-25T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4113</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Mobileum</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4113_Consulting Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Mobileum_2days_April2019</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1056 Clarence Tauro</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">16</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">0</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.0</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United States</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-03-28T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4118</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">BrainLoop AG</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4118_Consulting Day</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Brainloop_4days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1166 Bruno Simic</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">32</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">16</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.5</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Germany</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-03-28T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4118</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">BrainLoop AG</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4118_Consulting Day</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Brainloop_4days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1181 Vaidas Gasiunas</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">32</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">16</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.5</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Germany</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-04-09T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4128</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Softcat plc (UK)</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4128_Consulting Day</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Sainsbury_Softcat_5days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1081 Karthik Babu Sekar</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">40</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">0</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.0</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United Kingdom</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-04-09T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4128</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Softcat plc (UK)</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4128_TAM</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_Sainsbury_Softcat_12days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1081 Karthik Babu Sekar</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">96</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">0</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.0</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United Kingdom</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-04-10T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4139</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Louis Vuitton Malletier</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4139_TAM</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_LVMH_2020_6days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1212 Jose Molina Gonzalez</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">48</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">0</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.0</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-04-24T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4178</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Inditex, S.A.</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4178_Senior Consultant</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Inditex2019_100days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1126 Ludovic Dufrenoy</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">800</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">44</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.055</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Spain</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-04-24T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4178</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Inditex, S.A.</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4178_Senior Consultant</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Inditex2019_100days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1163 Raymundo Flores Medina</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">800</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">44</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.055</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Spain</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-04-24T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4178</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Inditex, S.A.</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4178_Senior Consultant</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Inditex2019_100days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1212 Jose Molina Gonzalez</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">800</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">44</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.055</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Spain</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-04-24T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4178</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Inditex, S.A.</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4178_Consulting Day</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_Inditex2019_100days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1163 Raymundo Flores Medina</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">800</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">148</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.185</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Spain</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-04-26T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4184</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">FIS Global</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4184_TAM</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_FISGlobal2019_12days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1181 Vaidas Gasiunas</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">96</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">56</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.583</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-04-29T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4189</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Centrica PLC</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4189_Consulting Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Centrica_15days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1081 Karthik Babu Sekar</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">120</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">16</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.133</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United Kingdom</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-05-15T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4224</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Microtronics Engineering GmbH</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4224_Consulting Day</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Microtronics_2days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1181 Vaidas Gasiunas</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">16</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">0</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.0</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Austria</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Pending</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-05-20T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4217</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">WIPRO Limited</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4217_Consulting Day</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_WiPro_3days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1181 Vaidas Gasiunas</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">24</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">20</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.833</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Germany</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-06-04T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4231</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Amadeus Data Processing GmbH</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4231_ASA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ASA_Amadeus_Nice_25days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1126 Ludovic Dufrenoy</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">200</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">108</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.54</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Germany</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-06-04T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4231</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Amadeus Data Processing GmbH</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4231_ASA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ASA_Amadeus_Nice_25days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1181 Vaidas Gasiunas</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">200</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">108</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.54</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Germany</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-06-04T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4231</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Amadeus Data Processing GmbH</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4231_TAM_Erding</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_Amadeus_Erding_12days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1126 Ludovic Dufrenoy</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">96</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">58</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.604</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Germany</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-06-04T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4231</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Amadeus Data Processing GmbH</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4231_TAM_Erding</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_Amadeus_Erding_12days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1181 Vaidas Gasiunas</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">96</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">58</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.604</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Germany</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-06-10T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4263</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Maccabi Health Care</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4263_Consulting Day</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Maccabi2019_130days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">10128 Lior King</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">1040</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">32</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.031</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Israel</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-06-10T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4263</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Maccabi Health Care</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4263_Consulting Day</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Maccabi2019_130days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">10148 Michael Zilberstein</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">1040</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">32</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.031</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Israel</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-06-10T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4263</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Maccabi Health Care</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4263_Consulting Day</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Maccabi2019_130days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1086 Roi Katz</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">1040</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">32</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.031</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Israel</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-06-19T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4281</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Adeya</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4281_Consulting Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Adeya_2days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1181 Vaidas Gasiunas</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">16</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">16</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">1.0</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Switzerland</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Pending</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-06-21T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4299</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Paul Mason Consulting Limited</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4299_Consulting Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_PaulMason_3days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1081 Karthik Babu Sekar</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">24</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">0</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.0</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United States</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-06-26T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4318</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Citicorp Investment Bank Singapore Ltd</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4318_Consulting Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Citi_Singapore_10days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1056 Clarence Tauro</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">80</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">0</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.0</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United States</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-06-30T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4307</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">DODDLE PARCEL SERVICES LIMITED</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4307_Consulting Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1126 Ludovic Dufrenoy</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">0</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">0</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.0</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United Kingdom</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Pending</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-10-30T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3730</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Amdocs Software Systems Limited</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3730_TAM</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ASA_Amdocs_250days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">10128 Lior King</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">2000</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">402</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.201</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Ireland</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-10-30T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3730</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Amdocs Software Systems Limited</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3730_TAM</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ASA_Amdocs_250days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">10148 Michael Zilberstein</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">2000</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">402</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.201</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Ireland</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2020-10-30T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3730</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Amdocs Software Systems Limited</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3730_TAM</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ASA_Amdocs_250days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1086 Roi Katz</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">2000</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">402</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.201</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Ireland</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2021-01-24T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US3952</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">BT plc</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US3952_Consulting Day</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_BT_14days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1081 Karthik Babu Sekar</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">112</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">8</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.071</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United Kingdom</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2021-02-28T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4049</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Lyra network</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4049_TAM Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM_Lyra_12days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1212 Jose Molina Gonzalez</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">96</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">32</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.33299999999999996</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">France</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2021-04-28T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4196</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">eBay</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4196_TAM first year</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">TAM (40 days)</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1086 Roi Katz</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">320</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">57</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.17800000000000002</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United States</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-03-07T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SO#US4073</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sky UK Limited</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">US4073_Consulting Days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Consulting_Sky_82days</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1081 Karthik Babu Sekar</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">656</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">104</Data></Cell>
+<Cell ss:StyleID="s__percent"><Data ss:Type="Number">0.159</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">United Kingdom</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">In Progress</Data></Cell>
+</Row>
+</Table>
+</Worksheet>
+</Workbook>

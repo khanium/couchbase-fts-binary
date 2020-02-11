@@ -1,7 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e806d1da-0cdf-49a6-8eef-2abce375eff8" name="Default Changelist" comment="" />
+    <list default="true" id="e806d1da-0cdf-49a6-8eef-2abce375eff8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/BinaryDoc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/BinaryDocRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/BinaryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/SearchResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/SearchableBinary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/SearchableBinaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/SearchableBinaryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/upload/FileUpload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/brands.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/brands.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/fts-results.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/regular.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/regular.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/search.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/solid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/solid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/svg-with-js.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/svg-with-js.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/v4-shims.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/v4-shims.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/cb_logo_bug_white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/pdf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/pdf2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/pdf3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/pdf4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/pdf5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/solid.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/v4-shims.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/analysis/DocumentAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/analysis/DocumentAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/analysis/FileDocument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/storage/CouchbaseFtsStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/storage/FileSystemStorageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/storage/StorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/storage/StorageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/upload/FileUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/upload/FileUploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/uploadForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/uploadForm.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,21 +99,27 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1W1659Z64C1ppm8MTcGO0DfMONG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="LombokPluginEnabledInProject" value="true" />
     <property name="LombokPluginIS_ANNOTATION_PROCESSING_CHECK_Enabled" value="true" />
@@ -46,7 +137,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/couchbase/demo/storage" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -56,9 +147,10 @@
       <recent name="com.couchbase.demo.upload" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/main/java/com/couchbase/demo/storage" />
       <recent name="$PROJECT_DIR$/src/main/java/com/couchbase/demo/document" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
@@ -106,6 +198,30 @@
       <updated>1578304567466</updated>
       <workItem from="1578304572326" duration="15436000" />
       <workItem from="1578411499750" duration="422000" />
+      <workItem from="1578412658944" duration="5639000" />
+      <workItem from="1578476764364" duration="597000" />
+      <workItem from="1578563828562" duration="283000" />
+      <workItem from="1578996699223" duration="252000" />
+      <workItem from="1579027127906" duration="650000" />
+      <workItem from="1579250702642" duration="3000" />
+      <workItem from="1579269975246" duration="9015000" />
+      <workItem from="1579431775537" duration="6056000" />
+      <workItem from="1580123390422" duration="54000" />
+      <workItem from="1580123475295" duration="36253000" />
+      <workItem from="1580550227286" duration="3393000" />
+      <workItem from="1580573693748" duration="2750000" />
+      <workItem from="1580582887595" duration="733000" />
+      <workItem from="1580658819947" duration="527000" />
+      <workItem from="1580734849338" duration="2884000" />
+      <workItem from="1580738725796" duration="132000" />
+      <workItem from="1580738907238" duration="23000" />
+      <workItem from="1580832266851" duration="1251000" />
+      <workItem from="1580845488656" duration="650000" />
+      <workItem from="1580846726168" duration="5246000" />
+      <workItem from="1580939758987" duration="3739000" />
+      <workItem from="1581269824871" duration="2595000" />
+      <workItem from="1581333587798" duration="6686000" />
+      <workItem from="1581406263466" duration="1696000" />
     </task>
     <servers />
   </component>
@@ -117,45 +233,110 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1578308458672" />
-    <state x="501" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578308530999">
+    <state x="653" y="253" key="#com.intellij.ide.util.MemberChooser" timestamp="1580551959830">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="501" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1578308530999" />
-    <state width="1638" height="272" key="GridCell.Tab.0.bottom" timestamp="1578392736731">
+    <state x="653" y="253" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1580551959830" />
+    <state x="2328" y="294" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580123409160">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2328" y="294" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1580123409160" />
+    <state x="358" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580550727015">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="272" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1578392736731" />
-    <state width="1638" height="272" key="GridCell.Tab.0.center" timestamp="1578392736730">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="358" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1580550727015" />
+    <state x="2378" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580138081123">
+      <screen x="1680" y="23" width="1920" height="1057" />
     </state>
-    <state width="1638" height="272" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1578392736730" />
-    <state width="1638" height="272" key="GridCell.Tab.0.left" timestamp="1578392736730">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="2378" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1580138081123" />
+    <state width="416" height="466" key="DebuggerActiveHint" timestamp="1581349550514">
+      <screen x="1680" y="23" width="1920" height="1057" />
     </state>
-    <state width="1638" height="272" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1578392736730" />
-    <state width="1638" height="272" key="GridCell.Tab.0.right" timestamp="1578392736731">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="416" height="466" key="DebuggerActiveHint/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581349550514" />
+    <state width="1878" height="210" key="GridCell.Tab.0.bottom" timestamp="1581412476229">
+      <screen x="1680" y="23" width="1920" height="1057" />
     </state>
-    <state width="1638" height="272" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1578392736731" />
-    <state width="1638" height="272" key="GridCell.Tab.1.bottom" timestamp="1578392736732">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1638" height="525" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1580846344554" />
+    <state width="1878" height="210" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581412476229" />
+    <state width="1878" height="210" key="GridCell.Tab.0.center" timestamp="1581412476228">
+      <screen x="1680" y="23" width="1920" height="1057" />
     </state>
-    <state width="1638" height="272" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1578392736732" />
-    <state width="1638" height="272" key="GridCell.Tab.1.center" timestamp="1578392736732">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1638" height="525" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1580846344553" />
+    <state width="1878" height="210" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581412476228" />
+    <state width="1878" height="210" key="GridCell.Tab.0.left" timestamp="1581412476227">
+      <screen x="1680" y="23" width="1920" height="1057" />
     </state>
-    <state width="1638" height="272" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1578392736732" />
-    <state width="1638" height="272" key="GridCell.Tab.1.left" timestamp="1578392736731">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1638" height="525" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1580846344553" />
+    <state width="1878" height="210" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581412476227" />
+    <state width="1878" height="210" key="GridCell.Tab.0.right" timestamp="1581412476228">
+      <screen x="1680" y="23" width="1920" height="1057" />
     </state>
-    <state width="1638" height="272" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1578392736731" />
-    <state width="1638" height="272" key="GridCell.Tab.1.right" timestamp="1578392736732">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1638" height="525" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1580846344554" />
+    <state width="1878" height="210" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581412476228" />
+    <state width="1878" height="210" key="GridCell.Tab.1.bottom" timestamp="1581412476230">
+      <screen x="1680" y="23" width="1920" height="1057" />
     </state>
-    <state width="1638" height="272" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1578392736732" />
-    <state x="519" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1578411580456">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1638" height="525" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1580846344556" />
+    <state width="1878" height="210" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581412476230" />
+    <state width="1878" height="210" key="GridCell.Tab.1.center" timestamp="1581412476230">
+      <screen x="1680" y="23" width="1920" height="1057" />
     </state>
-    <state x="519" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1578411580456" />
+    <state width="1638" height="525" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1580846344555" />
+    <state width="1878" height="210" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581412476230" />
+    <state width="1878" height="210" key="GridCell.Tab.1.left" timestamp="1581412476229">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1638" height="525" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1580846344555" />
+    <state width="1878" height="210" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581412476229" />
+    <state width="1878" height="210" key="GridCell.Tab.1.right" timestamp="1581412476230">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1638" height="525" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1580846344555" />
+    <state width="1878" height="210" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581412476230" />
+    <state width="1878" height="347" key="GridCell.Tab.2.bottom" timestamp="1581405918307">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1638" height="336" key="GridCell.Tab.2.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1580257489012" />
+    <state width="1878" height="347" key="GridCell.Tab.2.bottom/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581405918307" />
+    <state width="1878" height="347" key="GridCell.Tab.2.center" timestamp="1581405918306">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1638" height="336" key="GridCell.Tab.2.center/0.23.1680.1027@0.23.1680.1027" timestamp="1580257489010" />
+    <state width="1878" height="347" key="GridCell.Tab.2.center/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581405918306" />
+    <state width="1878" height="347" key="GridCell.Tab.2.left" timestamp="1581405918305">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1638" height="336" key="GridCell.Tab.2.left/0.23.1680.1027@0.23.1680.1027" timestamp="1580257489010" />
+    <state width="1878" height="347" key="GridCell.Tab.2.left/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581405918305" />
+    <state width="1878" height="347" key="GridCell.Tab.2.right" timestamp="1581405918307">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1638" height="336" key="GridCell.Tab.2.right/0.23.1680.1027@0.23.1680.1027" timestamp="1580257489011" />
+    <state width="1878" height="347" key="GridCell.Tab.2.right/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581405918307" />
+    <state x="2273" y="379" key="com.intellij.ide.util.TipDialog" timestamp="1581406264174">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="519" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1580846731349" />
+    <state x="2273" y="379" key="com.intellij.ide.util.TipDialog/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581406264174" />
+    <state x="2305" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1580149697486">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2305" y="258" width="670" height="676" key="search.everywhere.popup/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1580149697486" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/SearchResult.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/SearchResult.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

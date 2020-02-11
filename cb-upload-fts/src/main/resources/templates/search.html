@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org" lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Couchbase FTS</title>
-    </head>
-    <body>
-        <h1>Full Text Search</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Couchbase FTS</title>
+    <link rel="stylesheet" href="css/fts-results.css" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/all.css" rel="stylesheet"/>
+    <link href="css/solid.css" rel="stylesheet"/>
+    <link href="css/regular.css" rel="stylesheet"/>
+    <link href="css/v4-shims.css" rel="stylesheet"/>
+    <link href="css/fontawesome.min.css" rel="stylesheet"/>
+    <link href="css/svg-with-js.css" rel="stylesheet"/>
+    <link href="css/search.css" rel="stylesheet" />
+    <!--  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/search.js"></script>
+    <!-- <script src="js/jquery-1.11.1.min.js"></script> -->
+</head>
+<body>
 
-    </body>
+<div class="container-fluid">
+    <nav class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            <img src="images/cb_logo_bug_white.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            FullText Search Capabilities
+        </a>
+        <form class="form-inline" id="search_form">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="inputSearch">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <nav class="navbar navbar-dark bg-light">
+        <a class="btn btn-outline-dark" href="/upload" role="button">Upload File  <i class="fas fa-upload"></i></a>
+    </nav>
+
+    <div class="container-fluid" id="results" hidden="true">
+        <hgroup class="mb20" id="results-header">
+            <h1>Search Results</h1>
+            <h2 class="lead" id="header-display"><strong class="text-danger">3</strong> results were found for the search for <strong class="text-danger">Lorem</strong></h2>
+        </hgroup>
+
+        <!-- <section class="col-xs-12 col-sm-6 col-md-12" id="results-grid"> -->
+        <section class="container-fluid" id="results-grid">
+
+        </section>
+    </div>
+</div>
+
+</body>
+
 </html>
