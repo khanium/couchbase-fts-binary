@@ -1,0 +1,168 @@
+{
+ "name": "binarySearch",
+ "type": "fulltext-index",
+ "params": {
+  "doc_config": {
+   "docid_prefix_delim": "",
+   "docid_regexp": "",
+   "mode": "type_field",
+   "type_field": "_class"
+  },
+  "mapping": {
+   "default_analyzer": "en",
+   "default_datetime_parser": "dateTimeOptional",
+   "default_field": "_all",
+   "default_mapping": {
+    "dynamic": true,
+    "enabled": false
+   },
+   "default_type": "_default",
+   "docvalues_dynamic": true,
+   "index_dynamic": true,
+   "store_dynamic": false,
+   "type_field": "_type",
+   "types": {
+    "com.couchbase.demo.binaries.SearchableBinary": {
+     "dynamic": false,
+     "enabled": true,
+     "properties": {
+      "metadata": {
+       "dynamic": false,
+       "enabled": true,
+       "properties": {
+        "author": {
+         "enabled": true,
+         "dynamic": false,
+         "fields": [
+          {
+           "docvalues": true,
+           "include_in_all": true,
+           "include_term_vectors": true,
+           "index": true,
+           "name": "author",
+           "store": true,
+           "type": "text"
+          }
+         ]
+        },
+        "createdAt": {
+         "enabled": true,
+         "dynamic": false,
+         "fields": [
+          {
+           "docvalues": true,
+           "include_in_all": true,
+           "include_term_vectors": true,
+           "index": true,
+           "name": "createdAt",
+           "store": true,
+           "type": "datetime"
+          }
+         ]
+        },
+        "keywords": {
+         "enabled": true,
+         "dynamic": false,
+         "fields": [
+          {
+           "docvalues": true,
+           "include_in_all": true,
+           "include_term_vectors": true,
+           "index": true,
+           "name": "keywords",
+           "store": true,
+           "type": "text"
+          }
+         ]
+        }
+       }
+      },
+      "body": {
+       "enabled": true,
+       "dynamic": false,
+       "fields": [
+        {
+         "include_in_all": true,
+         "include_term_vectors": true,
+         "index": true,
+         "name": "body",
+         "store": true,
+         "type": "text"
+        }
+       ]
+      },
+      "docType": {
+       "enabled": true,
+       "dynamic": false,
+       "fields": [
+        {
+         "docvalues": true,
+         "include_term_vectors": true,
+         "index": true,
+         "name": "docType",
+         "store": true,
+         "type": "text"
+        }
+       ]
+      },
+      "reference": {
+       "enabled": true,
+       "dynamic": false,
+       "fields": [
+        {
+         "docvalues": true,
+         "include_term_vectors": true,
+         "index": true,
+         "name": "reference",
+         "store": true,
+         "type": "text"
+        }
+       ]
+      },
+      "registeredAt": {
+       "enabled": true,
+       "dynamic": false,
+       "fields": [
+        {
+         "docvalues": true,
+         "include_term_vectors": true,
+         "index": true,
+         "name": "registeredAt",
+         "store": true,
+         "type": "number"
+        }
+       ]
+      },
+      "thumbnail": {
+       "enabled": true,
+       "dynamic": false,
+       "fields": [
+        {
+         "docvalues": true,
+         "include_term_vectors": true,
+         "index": true,
+         "name": "thumbnail",
+         "store": true,
+         "type": "text"
+        }
+       ]
+      }
+     }
+    }
+   }
+  },
+  "store": {
+   "indexType": "scorch"
+  }
+ },
+ "sourceType": "couchbase",
+ "sourceName": "demo",
+ "sourceUUID": "7143da21fc04561a2aebc229c6a1c551",
+ "sourceParams": {},
+ "planParams": {
+  "maxPartitionsPerPIndex": 64,
+  "indexPartitions": 1,
+  "numReplicas": 1
+ },
+ "uuid": "65c0b44028f017b1"
+}

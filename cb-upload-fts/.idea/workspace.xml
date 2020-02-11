@@ -2,90 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e806d1da-0cdf-49a6-8eef-2abce375eff8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/BinaryDoc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/BinaryDocRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/BinaryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/SearchResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/SearchableBinary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/SearchableBinaryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/binaries/SearchableBinaryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/upload/FileUpload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/brands.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/brands.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/fts-results.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/regular.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/regular.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/search.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/solid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/solid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/svg-with-js.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/svg-with-js.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/v4-shims.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/v4-shims.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/cb_logo_bug_white.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/pdf.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/pdf2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/pdf3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/pdf4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/pdf5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-3.4.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/solid.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/v4-shims.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/analysis/DocumentAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/analysis/DocumentAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/analysis/FileDocument.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/config/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/storage/CouchbaseFtsStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/storage/FileSystemStorageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/storage/StorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/storage/StorageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/upload/FileUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/couchbase/demo/upload/FileUploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/uploadForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/uploadForm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +138,7 @@
       <workItem from="1580939758987" duration="3739000" />
       <workItem from="1581269824871" duration="2595000" />
       <workItem from="1581333587798" duration="6686000" />
-      <workItem from="1581406263466" duration="1696000" />
+      <workItem from="1581406263466" duration="2153000" />
     </task>
     <servers />
   </component>
@@ -253,46 +170,46 @@
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state width="416" height="466" key="DebuggerActiveHint/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581349550514" />
-    <state width="1878" height="210" key="GridCell.Tab.0.bottom" timestamp="1581412476229">
+    <state width="1878" height="210" key="GridCell.Tab.0.bottom" timestamp="1581414936205">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state width="1638" height="525" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1580846344554" />
-    <state width="1878" height="210" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581412476229" />
-    <state width="1878" height="210" key="GridCell.Tab.0.center" timestamp="1581412476228">
+    <state width="1878" height="210" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581414936205" />
+    <state width="1878" height="210" key="GridCell.Tab.0.center" timestamp="1581414936204">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state width="1638" height="525" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1580846344553" />
-    <state width="1878" height="210" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581412476228" />
-    <state width="1878" height="210" key="GridCell.Tab.0.left" timestamp="1581412476227">
+    <state width="1878" height="210" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581414936204" />
+    <state width="1878" height="210" key="GridCell.Tab.0.left" timestamp="1581414936204">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state width="1638" height="525" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1580846344553" />
-    <state width="1878" height="210" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581412476227" />
-    <state width="1878" height="210" key="GridCell.Tab.0.right" timestamp="1581412476228">
+    <state width="1878" height="210" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581414936204" />
+    <state width="1878" height="210" key="GridCell.Tab.0.right" timestamp="1581414936205">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state width="1638" height="525" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1580846344554" />
-    <state width="1878" height="210" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581412476228" />
-    <state width="1878" height="210" key="GridCell.Tab.1.bottom" timestamp="1581412476230">
+    <state width="1878" height="210" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581414936205" />
+    <state width="1878" height="210" key="GridCell.Tab.1.bottom" timestamp="1581414936208">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state width="1638" height="525" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1580846344556" />
-    <state width="1878" height="210" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581412476230" />
-    <state width="1878" height="210" key="GridCell.Tab.1.center" timestamp="1581412476230">
+    <state width="1878" height="210" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581414936208" />
+    <state width="1878" height="210" key="GridCell.Tab.1.center" timestamp="1581414936207">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state width="1638" height="525" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1580846344555" />
-    <state width="1878" height="210" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581412476230" />
-    <state width="1878" height="210" key="GridCell.Tab.1.left" timestamp="1581412476229">
+    <state width="1878" height="210" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581414936207" />
+    <state width="1878" height="210" key="GridCell.Tab.1.left" timestamp="1581414936206">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state width="1638" height="525" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1580846344555" />
-    <state width="1878" height="210" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581412476229" />
-    <state width="1878" height="210" key="GridCell.Tab.1.right" timestamp="1581412476230">
+    <state width="1878" height="210" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581414936206" />
+    <state width="1878" height="210" key="GridCell.Tab.1.right" timestamp="1581414936208">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state width="1638" height="525" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1580846344555" />
-    <state width="1878" height="210" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581412476230" />
+    <state width="1878" height="210" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1581414936208" />
     <state width="1878" height="347" key="GridCell.Tab.2.bottom" timestamp="1581405918307">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>

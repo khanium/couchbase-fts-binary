@@ -316,6 +316,8 @@ Open your browser and upload pdfs files using the application UI: [http://localh
 
 ### 6. Search by content text
 
+[http://localhost:8080/search](http://localhost:8080/search)
+![search content](assets/images/search.png)
 
 ## References
 
